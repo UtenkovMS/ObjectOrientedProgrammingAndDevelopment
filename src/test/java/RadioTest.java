@@ -46,7 +46,7 @@ public class RadioTest {
     public void nextNomberRadio() {
         Radio radio = new Radio();
         radio.setCurrenStationNumber(7);
-        radio.Next();
+        radio.next();
 
         int expected = 8; // ожидаемый результат
         int actual = radio.getCurrenStationNumber();
@@ -59,7 +59,7 @@ public class RadioTest {
     public void nextNomberRadio1() {
         Radio radio = new Radio();
         radio.setCurrenStationNumber(9);
-        radio.Next();
+        radio.next();
 
         int expected = 0; // ожидаемый результат
         int actual = radio.getCurrenStationNumber();
@@ -72,7 +72,7 @@ public class RadioTest {
     public void nextNomberRadio2() {
         Radio radio = new Radio();
         radio.setCurrenStationNumber(9);
-        radio.Next();
+        radio.next();
 
         int expected = 0; // ожидаемый результат
         int actual = radio.getCurrenStationNumber();
@@ -85,7 +85,7 @@ public class RadioTest {
     public void backNomberRadio() {
         Radio radio = new Radio();
         radio.setCurrenStationNumber(7);
-        radio.Previos();
+        radio.prev();
 
         int expected = 6; // ожидаемый результат
         int actual = radio.getCurrenStationNumber();
@@ -98,7 +98,7 @@ public class RadioTest {
     public void backNomberRadio1() {
         Radio radio = new Radio();
         radio.setCurrenStationNumber(0);
-        radio.Previos();
+        radio.prev();
 
         int expected = 9; // ожидаемый результат
         int actual = radio.getCurrenStationNumber();
@@ -111,7 +111,7 @@ public class RadioTest {
     public void backNomberRadio2() {
         Radio radio = new Radio();
         radio.setCurrenStationNumber(-1);
-        radio.Previos();
+        radio.prev();
 
         int expected = 9; // ожидаемый результат
         int actual = radio.getCurrenStationNumber();
@@ -124,7 +124,7 @@ public class RadioTest {
     public void backNomberRadio3() {
         Radio radio = new Radio();
         radio.setCurrenStationNumber(9);
-        radio.Previos();
+        radio.prev();
 
         int expected = 8; // ожидаемый результат
         int actual = radio.getCurrenStationNumber();

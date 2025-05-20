@@ -1,6 +1,7 @@
 public class Radio {
 
-    public int currenStationNumber;
+    private int currenStationNumber;
+    private int soundVolume;
 
     public int getCurrenStationNumber() {
         return currenStationNumber;
@@ -17,33 +18,6 @@ public class Radio {
         currenStationNumber = NewCurrenStationNumber;
     }
 
-
-    public void Next() {
-
-        if (currenStationNumber < 9) {
-            currenStationNumber = currenStationNumber + 1;
-        } else {
-            currenStationNumber = 0;
-        }
-    }
-
-    public void Previos() {
-
-        if (currenStationNumber < 9) {
-            currenStationNumber = currenStationNumber - 1;
-        }
-
-        if (currenStationNumber == 9) {
-            currenStationNumber = currenStationNumber - 1;
-        }
-
-        if (currenStationNumber < 0) {
-            currenStationNumber = currenStationNumber + 10;
-        }
-    }
-
-    public int soundVolume;
-
     public int getCurrentSoundVolume() {
         return soundVolume;
     }
@@ -59,7 +33,31 @@ public class Radio {
         soundVolume = NewCurrentSoundVolume;
     }
 
-    public void soundVolumeUp() {
+    public void next() {
+
+        if (currenStationNumber < 9) {
+            currenStationNumber = currenStationNumber + 1;
+        } else {
+            currenStationNumber = 0;
+        }
+    }
+
+    public void prev() {
+
+        if (currenStationNumber < 9) {
+            currenStationNumber = currenStationNumber - 1;
+        }
+
+        if (currenStationNumber == 9) {
+            currenStationNumber = currenStationNumber - 1;
+        }
+
+        if (currenStationNumber < 0) {
+            currenStationNumber = currenStationNumber + 10;
+        }
+    }
+
+          public void soundVolumeUp() {
 
         if (soundVolume < 100) {
             soundVolume = soundVolume + 1;
@@ -69,11 +67,6 @@ public class Radio {
             if (soundVolume >= 100) {
                 soundVolume = 100;
             }
-
-
-//        } else {
-//            soundVolume = 100;
-//        }
     }
 
     public void soundVolumeBakc() {
