@@ -1,3 +1,4 @@
+package ru.netology.radio;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
@@ -134,7 +135,7 @@ public class RadioTest {
     }
 
     @Test
-    public void CurrentSoundVolume() {
+    public void currentSoundVolume() {
         Radio radio = new Radio();
         radio.setCurrentSoundVolume(50);
 
@@ -146,7 +147,7 @@ public class RadioTest {
     }
 
     @Test
-    public void CurrentSoundVolume1() {
+    public void currentSoundVolume1() {
         Radio radio = new Radio();
         radio.setCurrentSoundVolume(101);
 
@@ -158,7 +159,7 @@ public class RadioTest {
     }
 
     @Test
-    public void CurrentSoundVolume2() {
+    public void currentSoundVolume2() {
         Radio radio = new Radio();
         radio.setCurrentSoundVolume(-1);
 
@@ -170,7 +171,7 @@ public class RadioTest {
     }
 
     @Test
-    public void VolumeUp() {
+    public void volumeUp() {
         Radio radio = new Radio();
         radio.setCurrentSoundVolume(50);
         radio.soundVolumeUp();
@@ -183,7 +184,7 @@ public class RadioTest {
     }
 
     @Test
-    public void VolumeUp1() {
+    public void volumeUp1() {
         Radio radio = new Radio();
         radio.setCurrentSoundVolume(100);
         radio.soundVolumeUp();
@@ -196,7 +197,7 @@ public class RadioTest {
     }
 
     @Test
-    public void VolumeBakc() {
+    public void volumeBakc() {
         Radio radio = new Radio();
         radio.setCurrentSoundVolume(50);
         radio.soundVolumeBakc();
@@ -209,7 +210,7 @@ public class RadioTest {
     }
 
     @Test
-    public void VolumeBakc1() {
+    public void volumeBakc1() {
         Radio radio = new Radio();
         radio.setCurrentSoundVolume(-1);
         radio.soundVolumeBakc();
@@ -222,7 +223,7 @@ public class RadioTest {
     }
 
     @Test
-    public void VolumeBakc2() {
+    public void volumeBakc2() {
         Radio radio = new Radio();
         radio.setCurrentSoundVolume(100);
         radio.soundVolumeBakc();

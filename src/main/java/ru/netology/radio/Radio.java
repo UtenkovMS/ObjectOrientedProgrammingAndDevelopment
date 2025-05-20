@@ -1,3 +1,4 @@
+package ru.netology.radio;
 public class Radio {
 
     private int currenStationNumber;
@@ -57,16 +58,16 @@ public class Radio {
         }
     }
 
-          public void soundVolumeUp() {
+    public void soundVolumeUp() {
 
         if (soundVolume < 100) {
             soundVolume = soundVolume + 1;
 
         }
 
-            if (soundVolume >= 100) {
-                soundVolume = 100;
-            }
+        if (soundVolume >= 100) {
+            soundVolume = 100;
+        }
     }
 
     public void soundVolumeBakc() {
