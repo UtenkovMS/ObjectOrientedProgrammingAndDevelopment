@@ -46,11 +46,7 @@ public class Radio {
 
     public void prev() {
 
-        if (currenStationNumber < 9) {
-            currenStationNumber = currenStationNumber - 1;
-        }
-
-        if (currenStationNumber == 9) {
+        if (currenStationNumber <= 9) {
             currenStationNumber = currenStationNumber - 1;
         }
 
@@ -72,11 +68,7 @@ public class Radio {
 
     public void soundVolumeBakc() {
 
-        if (soundVolume < 100) {
-            soundVolume = soundVolume - 1;
-        }
-
-        if (soundVolume == 100) {
+        if (soundVolume <= 100) {
             soundVolume = soundVolume - 1;
         }
 
