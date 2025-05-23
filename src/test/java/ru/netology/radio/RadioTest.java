@@ -235,4 +235,17 @@ public class RadioTest {
         Assertions.assertEquals(expected, actual);
         System.out.println("Шкала громкости уменьшена на шаг: " + radio.getCurrentSoundVolume());
     }
-}
+
+    @Test
+    public void volumeBakc3() {
+        Radio radio = new Radio();
+        radio.setCurrentSoundVolume(0);
+        radio.soundVolumeBakc();
+
+        int expected = 0; // ожидаемый результат
+        int actual = radio.getCurrentSoundVolume();
+
+        Assertions.assertEquals(expected, actual);
+        System.out.println("Шкала громкости уменьшена на шаг: " + radio.getCurrentSoundVolume());
+    }
+   }
