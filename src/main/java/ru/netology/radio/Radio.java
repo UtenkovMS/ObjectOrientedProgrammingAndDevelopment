@@ -9,30 +9,30 @@ public class Radio {
         return currenStationNumber;
     }
 
-    public void setCurrenStationNumber(int NewCurrenStationNumber) {
-        if (NewCurrenStationNumber < 0) {
+    public void setCurrenStationNumber(int newCurrenStationNumber) {
+        if (newCurrenStationNumber < 0) {
             return;
         }
 
-        if (NewCurrenStationNumber > 9) {
+        if (newCurrenStationNumber > 9) {
             return;
         }
-        currenStationNumber = NewCurrenStationNumber;
+        currenStationNumber = newCurrenStationNumber;
     }
 
     public int getCurrentSoundVolume() {
         return soundVolume;
     }
 
-    public void setCurrentSoundVolume(int NewCurrentSoundVolume) {
-        if (NewCurrentSoundVolume < 0) {
+    public void setCurrentSoundVolume(int newCurrentSoundVolume) {
+        if (newCurrentSoundVolume < 0) {
             return;
         }
 
-        if (NewCurrentSoundVolume > 100) {
+        if (newCurrentSoundVolume > 100) {
             return;
         }
-        soundVolume = NewCurrentSoundVolume;
+        soundVolume = newCurrentSoundVolume;
     }
 
     public void next() {
