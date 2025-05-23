@@ -1,4 +1,5 @@
 package ru.netology.radio;
+
 public class Radio {
 
     private int currenStationNumber;
@@ -49,10 +50,6 @@ public class Radio {
             currenStationNumber = currenStationNumber - 1;
         }
 
-        if (currenStationNumber == 9) {
-            currenStationNumber = currenStationNumber - 1;
-        }
-
         if (currenStationNumber < 0) {
             currenStationNumber = currenStationNumber + 10;
         }
@@ -62,7 +59,6 @@ public class Radio {
 
         if (soundVolume < 100) {
             soundVolume = soundVolume + 1;
-
         }
 
         if (soundVolume >= 100) {
