@@ -39,19 +39,20 @@ public class Radio {
 
         if (currenStationNumber < 9) {
             currenStationNumber = currenStationNumber + 1;
-        } else {
-            currenStationNumber = 0;
-        }
+
+        } else {minxStationRadio();        }
     }
 
     public void prev() {
 
-        if (currenStationNumber <= 9) {
+        if (currenStationNumber < 9) {
             currenStationNumber = currenStationNumber - 1;
         }
 
+        else {currenStationNumber = currenStationNumber - 1;}
+
         if (currenStationNumber < 0) {
-            currenStationNumber = currenStationNumber + 10;
+            maxStationRadio();
         }
     }
 
@@ -61,21 +62,42 @@ public class Radio {
             soundVolume = soundVolume + 1;
         }
 
-        if (soundVolume >= 100) {
-            soundVolume = 100;
-        }
+        else {maxVolumeSound();}
     }
 
     public void soundVolumeBakc() {
 
-        if (soundVolume <= 100) {
+        if (soundVolume < 100) {
             soundVolume = soundVolume - 1;
         }
 
+        else {soundVolume = soundVolume - 1;}
+
         if (soundVolume < 0) {
-            soundVolume = 0;
+            minVolumeSound();
         }
     }
+
+    public void maxStationRadio() {
+
+        currenStationNumber = 9;
+    }
+
+    public void minxStationRadio() {
+
+        currenStationNumber = 0;
+    }
+
+    public void maxVolumeSound() {
+
+        soundVolume = 100;
+    }
+
+    public void minVolumeSound() {
+
+        soundVolume = 0;
+    }
+
 }
 
 
