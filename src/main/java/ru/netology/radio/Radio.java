@@ -40,16 +40,18 @@ public class Radio {
         if (currenStationNumber < 9) {
             currenStationNumber = currenStationNumber + 1;
 
-        } else {minxStationRadio();        }
+        } else {
+            minxStationRadio();
+        }
     }
 
     public void prev() {
 
         if (currenStationNumber < 9) {
             currenStationNumber = currenStationNumber - 1;
+        } else {
+            currenStationNumber = currenStationNumber - 1;
         }
-
-        else {currenStationNumber = currenStationNumber - 1;}
 
         if (currenStationNumber < 0) {
             maxStationRadio();
@@ -60,18 +62,18 @@ public class Radio {
 
         if (soundVolume < 100) {
             soundVolume = soundVolume + 1;
+        } else {
+            maxVolumeSound();
         }
-
-        else {maxVolumeSound();}
     }
 
     public void soundVolumeBakc() {
 
         if (soundVolume < 100) {
             soundVolume = soundVolume - 1;
+        } else {
+            soundVolume = soundVolume - 1;
         }
-
-        else {soundVolume = soundVolume - 1;}
 
         if (soundVolume < 0) {
             minVolumeSound();

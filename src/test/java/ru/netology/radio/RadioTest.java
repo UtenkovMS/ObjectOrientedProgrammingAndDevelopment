@@ -70,19 +70,6 @@ public class RadioTest {
         System.out.println("Номер станции с шагом вперед " + radio.getCurrenStationNumber() + " FM");
     }
 
-//    @Test
-//    public void nextNomberRadio2() {
-//        Radio radio = new Radio();
-//        radio.setCurrenStationNumber(9);
-//        radio.next();
-//
-//        int expected = 0; // ожидаемый результат
-//        int actual = radio.getCurrenStationNumber();
-//
-//        Assertions.assertEquals(expected, actual);
-//        System.out.println("Номер станции с шагом вперед " + radio.getCurrenStationNumber() + " FM");
-//    }
-
     @Test
     public void backNomberRadio() {
         Radio radio = new Radio();
@@ -248,4 +235,4 @@ public class RadioTest {
         Assertions.assertEquals(expected, actual);
         System.out.println("Шкала громкости уменьшена на шаг: " + radio.getCurrentSoundVolume());
     }
-   }
+}
