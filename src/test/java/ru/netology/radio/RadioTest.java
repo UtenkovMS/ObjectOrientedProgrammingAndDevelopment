@@ -185,7 +185,7 @@ public class RadioTest {
     }
 
     @Test
-    public void volumeBakc() {
+    public void volumeBack() {
         Radio radio = new Radio();
         radio.setCurrentSoundVolume(50);
         radio.soundVolumeBakc();
@@ -198,7 +198,7 @@ public class RadioTest {
     }
 
     @Test
-    public void volumeBakc1() {
+    public void volumeBack1() {
         Radio radio = new Radio();
         radio.setCurrentSoundVolume(-1);
         radio.soundVolumeBakc();
@@ -211,7 +211,7 @@ public class RadioTest {
     }
 
     @Test
-    public void volumeBakc2() {
+    public void volumeBack2() {
         Radio radio = new Radio();
         radio.setCurrentSoundVolume(100);
         radio.soundVolumeBakc();
@@ -224,7 +224,7 @@ public class RadioTest {
     }
 
     @Test
-    public void volumeBakc3() {
+    public void volumeBack3() {
         Radio radio = new Radio();
         radio.setCurrentSoundVolume(0);
         radio.soundVolumeBakc();

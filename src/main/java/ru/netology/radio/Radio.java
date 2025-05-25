@@ -37,21 +37,17 @@ public class Radio {
 
     public void next() {
 
-        if (currenStationNumber < 9) {
-            currenStationNumber = currenStationNumber + 1;
+        currenStationNumber = currenStationNumber + 1;
 
-        } else {
-            minxStationRadio();
+        if (currenStationNumber > 9) {
+
+            minStationRadio();
         }
     }
 
     public void prev() {
 
-        if (currenStationNumber < 9) {
-            currenStationNumber = currenStationNumber - 1;
-        } else {
-            currenStationNumber = currenStationNumber - 1;
-        }
+        currenStationNumber = currenStationNumber - 1;
 
         if (currenStationNumber < 0) {
             maxStationRadio();
@@ -60,20 +56,16 @@ public class Radio {
 
     public void soundVolumeUp() {
 
-        if (soundVolume < 100) {
-            soundVolume = soundVolume + 1;
-        } else {
+        soundVolume = soundVolume + 1;
+
+        if (soundVolume > 100) {
             maxVolumeSound();
         }
     }
 
     public void soundVolumeBakc() {
 
-        if (soundVolume < 100) {
-            soundVolume = soundVolume - 1;
-        } else {
-            soundVolume = soundVolume - 1;
-        }
+        soundVolume = soundVolume - 1;
 
         if (soundVolume < 0) {
             minVolumeSound();
@@ -85,7 +77,7 @@ public class Radio {
         currenStationNumber = 9;
     }
 
-    public void minxStationRadio() {
+    public void minStationRadio() {
 
         currenStationNumber = 0;
     }
