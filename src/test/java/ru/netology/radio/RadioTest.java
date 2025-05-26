@@ -235,4 +235,29 @@ public class RadioTest {
         Assertions.assertEquals(expected, actual);
         System.out.println("Шкала громкости уменьшена на шаг: " + radio.getCurrentSoundVolume());
     }
+
+    @Test
+    public void shouldMaxStationRange() {
+        Radio radio = new Radio(30);
+
+        radio.setCurrenStationNumber(15);
+        radio.next();
+
+        int expected = 16; // ожидаемый результат
+        int actual = radio.getCurrenStationNumber();
+
+        Assertions.assertEquals(expected, actual);
+        System.out.println("Номер станции с шагом вперед " + radio.getCurrenStationNumber() + " FM");
+    }
+
+    @Test public void shouldDefaultStationRange() {
+        Radio radio = new Radio();
+
+        int expected = 10;
+        int actual = radio.getStationRange();
+
+        Assertions.assertEquals(expected, actual);
+
+        System.out.println("Диапазон станций по умолчанию: " + radio.getStationRange());
+    }
 }
